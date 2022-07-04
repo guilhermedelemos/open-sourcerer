@@ -12,6 +12,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
+
+##
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -24,16 +26,49 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+# twitter_username: guilhermelemos
+# github_username:  guilhermedelemos
+
+# Serve the website from the given base URL
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: guilhermelemos
-github_username:  guilhermedelemos
 
+# Excerpt separator for posts
+# excerpt_separator: <!--more-->
+
+###
 # Build settings
+###
+
+# Set the time zone for site generation. This sets the TZ environment variable, which Ruby 
+# uses to handle time and date creation and manipulation.
+timezone: Etc/UTC
+
+# Set the encoding of files by name
+# encoding: utf-8
+
+# Incremental build only re-builds posts and pages that have changed [...]
+# incremental: true
+
+# profile: true
+# Generate a Liquid rendering profile to help you identify performance bottlenecks.
+
+# Cause a build to fail if there is a YAML syntax error in a page's front matter.
+# strict_front_matter: true
+
+# lax, warn, strict
+# liquid:
+  # error_mode: warn
+  # strict_variables: false
+  # strict_filters: true
+
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
+##
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
