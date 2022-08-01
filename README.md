@@ -16,3 +16,10 @@ bundle exec jekyll serve --drafts --livereload
 ```
 $ bundle update GEM_NAME
 ```
+
+## References
+
+- [Ruby](https://www.ruby-lang.org)
+- [Jekyll](https://jekyllrb.com)
+- [Liquid](https://shopify.github.io/liquid)
+- [GitHub Pages](https://pages.github.com)
