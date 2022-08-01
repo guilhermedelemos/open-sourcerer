@@ -8,7 +8,7 @@ permalink: staff
 <ul>
   {% for author in site.staff %}
     <li>
-      <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+      <h2><a href="{{site.baseurl}}{{ author.url }}">{{ author.name }}</a></h2>
       <h3>{{ author.position }}</h3>
       <p>{{ author.content | markdownify }}</p>
     </li>

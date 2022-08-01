@@ -26,9 +26,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Web site about software development and software quality.
 # twitter_username: guilhermelemos
 # github_username:  guilhermedelemos
+version: 1.0.0
 
 # Serve the website from the given base URL
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/open-sourcerer" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Excerpt separator for posts
