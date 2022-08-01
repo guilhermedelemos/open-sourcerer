@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: white-paper
 title: Behavior Driven Development
 permalink: /bdd
 ---

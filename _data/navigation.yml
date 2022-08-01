@@ -1,4 +1,18 @@
 - name: Home
   link: /
+  published: true
+- name: Software Quality
+  link: /software-quality
+  published: false
+- name: BDD
+  link: /bdd
+  published: false
+- name: Blog
+  link: /blog
+  published: false
+- name: Staff
+  link: /staff
+  published: false
 - name: About
   link: /about
+  published: true

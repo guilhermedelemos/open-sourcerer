@@ -1,5 +1,8 @@
 <nav>
-    {% for item in site.data.navigation %}
-      <a href="{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-    {% endfor %}
+  {% for item in site.data.navigation %}
+    {% if jekyll.environment == "production" and item.published == false %}
+    {% continue %}
+    {% endif %}
+  <a href="{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
 </nav>
